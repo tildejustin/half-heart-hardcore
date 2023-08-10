@@ -1,0 +1,8 @@
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:$minecraft_version"
+    mappings "com.github.RedLime:yarn:$yarn_mappings:v2"
+}

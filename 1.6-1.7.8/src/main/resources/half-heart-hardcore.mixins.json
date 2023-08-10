@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.tildejustin.half_heart_hardcore.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "LevelInfoMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+    "InGameHudMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

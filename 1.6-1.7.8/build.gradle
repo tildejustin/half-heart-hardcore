@@ -1,0 +1,6 @@
+apply plugin: "legacy-looming"
+
+dependencies {
+    minecraft "com.mojang:minecraft:$minecraft_version"
+    mappings(legacy.yarn(minecraft_version, yarn_build))
+}
