@@ -1,0 +1,46 @@
+plugins {
+    id "fabric-loom"
+    id "io.github.juuxel.loom-vineflower"
+}
+
+var target_version = project.path.replace(":", "")
+version = "$mod_version+$target_version"
+group = maven_group
+
+base {
+    archivesName = archives_name
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:$loader_version"
+}
+
+processResources {
+    filesMatching("fabric.mod.json") {
+        expand "version": version, "target_version": target_version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release.set(8)
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+vineflower {
+    toolVersion = "1.9.2"
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_$base.archivesName" }
+    }
+}

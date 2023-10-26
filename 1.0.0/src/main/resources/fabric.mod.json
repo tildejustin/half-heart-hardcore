@@ -2,20 +2,17 @@
   "schemaVersion": 1,
   "id": "half-heart-hardcore-mixin",
   "version": "${version}",
-  "name": "Half Heart Hardcore",
+  "name": "Half-Heart Hardcore",
   "description": "",
   "authors": [
     "tildejustin"
   ],
-  "contact": {
-    "sources": "https://github.com/tildejustin/half-heart-hardcore"
-  },
   "license": "MIT",
   "environment": "*",
   "mixins": [
     "half-heart-hardcore.mixins.json"
   ],
   "depends": {
-    "minecraft": ">=1.19.3"
+    "minecraft": ">=1.0 <1.1"
   }
 }

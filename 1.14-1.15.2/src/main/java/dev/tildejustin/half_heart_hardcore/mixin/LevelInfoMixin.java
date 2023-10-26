@@ -1,6 +1,5 @@
 package dev.tildejustin.half_heart_hardcore.mixin;
 
-import net.minecraft.world.Difficulty;
 import net.minecraft.world.GameMode;
 import net.minecraft.world.level.LevelInfo;
 import org.spongepowered.asm.mixin.Mixin;

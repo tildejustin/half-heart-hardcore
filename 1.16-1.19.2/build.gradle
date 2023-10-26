@@ -1,5 +1,5 @@
-repositories {
-    maven { url "https://jitpack.io" }
+plugins {
+    id "loom"
 }
 
 dependencies {

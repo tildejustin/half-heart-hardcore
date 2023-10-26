@@ -2,17 +2,16 @@
   "schemaVersion": 1,
   "id": "half-heart-hardcore",
   "version": "${version}",
-  "name": "Half Heart Hardcore",
-  "description": "",
+  "name": "Half-Heart Hardcore",
+  "description": "mod that makes all worlds hardcore and gives the player half-a-heart max health",
   "authors": [
     "tildejustin"
   ],
   "contact": {
-    "sources": "https://github.com/tildejustin/half-heart-hardcore"
+    "homepage": "https://modrinth.com/mod/half-heart-hardcore",
+    "sources": "https://github.com/tildejustin/half-heart-hardcore",
+    "issues": "https://github.com/tildejustin/half-heart-hardcore/issues"
   },
   "license": "MIT",
-  "environment": "*",
-  "depends": {
-    "fabricloader": ">=0.14"
-  }
+  "environment": "*"
 }
