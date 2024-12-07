@@ -15,5 +15,4 @@ dependencies {
     implementation "fabric-loom:fabric-loom.gradle.plugin:$loom_version"
     implementation "net.legacyfabric:legacy-looming:$legacy_looming_version"
     implementation "ploceus:ploceus.gradle.plugin:$ploceus_version"
-    implementation "io.github.juuxel:loom-vineflower:$loom_vineflower_version"
 }
